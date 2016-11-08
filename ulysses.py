@@ -12,8 +12,6 @@ import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 from bs4 import BeautifulSoup as bs
 from urllib.request import urlopen
-import re
-
 
 #set variables
 title = "not"
@@ -91,13 +89,7 @@ def ithaca (urls):
 
    img.save("static/" + title + '.png')
 
-
-   #f = Image.open("static/" + title + '.png').show()
-
-
    wcount=(len(punct))
-
-  
 
    return wcount 
    return title

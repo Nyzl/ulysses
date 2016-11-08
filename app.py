@@ -5,13 +5,10 @@ app = Flask(__name__)
 
 app.vars={}
 urls=""
-#app.vars={}
-
 
 @app.route('/index',methods=['GET'])
 def index():
     	return render_template('tool.html')
-
 
 @app.route('/index',methods=['POST'])
 def index2():
@@ -22,20 +19,7 @@ def index2():
 	title = ulysses.title
 	wcount = ulysses.wcount
 
-	#title variable here ulysses.title
-
-	#title = 
-
-
-
 	return render_template('result.html',ptitle=title)
-	#return render_template('result.html')
-
-
-
-
-
-  
 
 if __name__ == "__main__":
     app.run()
