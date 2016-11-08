@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <title>Punctuation Picture</title>
+    <!-- Mobile Specific Metas-->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=2.0" name="viewport">
+    <meta content="48a2415d-980f-4763-a5b9-e10e000636b3" name="cab-guid">
+    <meta content="EWS" name="cab-extent">
+    <meta content="B53C5C20449FC2233D3862B4DBEDFA3E" name="msvalidate.01">
+    <!-- Stylesheets-->
+    <link rel=stylesheet type=text/css href='{{ url_for('static',filename='site.css')}}'>
+  </head>
+  <body>
+    <div style="max-width:900px;padding:10px;margin:10px auto">
+      <h1 style="margin-top: 0;">Punctuation Picture</h1>
+      <p>Results for {{ptitle}} </p>
+      <div class="well--outline"><img src="{{ url_for('static',filename=ptitle+'.png')}}" style="width:100%;height:auto;"></div>
+      <form action="/index">
+        <input type="submit" value="reset" />
+      </form>
+      <!-- button type="reset" class="btn-secondary restart-button-icon">Restart</button -->
+    </div>
+  </body>
+</html>

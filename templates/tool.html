@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <title>Punctuation Picture</title>
+    <!-- Mobile Specific Metas-->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=2.0" name="viewport">
+    <meta content="48a2415d-980f-4763-a5b9-e10e000636b3" name="cab-guid">
+    <meta content="EWS" name="cab-extent">
+    <meta content="B53C5C20449FC2233D3862B4DBEDFA3E" name="msvalidate.01">
+    <!-- Stylesheets-->
+    <!--link href="css/site.css" rel="stylesheet"-->
+    <link rel=stylesheet type=text/css href='{{ url_for('static',filename='site.css')}}'>
+  </head>
+  <body>
+  <form id='intro_form' method='post' action='index' >
+    <div style="max-width:900px;padding:10px;margin:10px auto">
+      <h1 style="margin-top: 0;">Punctuation Picture</h1>
+      <p>First tell me the url of the page you want to view the punctuation from - please note that this should be publicly accessible, not one of those pages hidden behind a login or paywall. Actually, this only works with the Citizens Advice site at the moment, and even then only with Advice pages.</p>
+      <fieldset></fieldset>
+      <div class="field-group field-group--buttons">
+        <input id="field" type="text" name="url" placeholder="www.example.com">
+        <button class="btn">Submit</button>
+      </div>
+    </div>
+    </form>
+  </body>
+</html>
