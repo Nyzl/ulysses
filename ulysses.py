@@ -14,7 +14,7 @@ from PIL import ImageDraw
 from bs4 import BeautifulSoup as bs
 from urllib.request import urlopen
 
-matplotlib.use('Agg')
+
 #set variables
 title = "not"
 wcount = "0"
