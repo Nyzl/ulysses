@@ -26,7 +26,7 @@ def ithaca (urls):
 
 # pixel border width
    trim = 100;
-   font1size = 48;
+   font1size = 75;
 
 
 #web scrape
@@ -67,8 +67,7 @@ def ithaca (urls):
    draw = ImageDraw.Draw(img)
 # font from (SEE LICENSE!): http://www.fontsquirrel.com/fonts/glacial-indifference
    font1 = ImageFont.truetype(".fonts/GlacialIndifference-Bold.otf", font1size)
-   #font1 = ImageFont.truetype("._fonts/arial.ttf", font1size)
-   #font1 = ImageFont.load_default()
+
    
 
 # in case you want to change by transition
