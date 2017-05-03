@@ -8,6 +8,7 @@ import sys
 from PIL import Image
 from PIL import ImageFont
 from PIL import ImageDraw
+import matplotlib
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 from bs4 import BeautifulSoup as bs
