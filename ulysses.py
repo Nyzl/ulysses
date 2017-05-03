@@ -8,12 +8,12 @@ import sys
 from PIL import Image
 from PIL import ImageFont
 from PIL import ImageDraw
-matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 from bs4 import BeautifulSoup as bs
 from urllib.request import urlopen
 
+matplotlib.use('Agg')
 #set variables
 title = "not"
 wcount = "0"
