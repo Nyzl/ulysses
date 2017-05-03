@@ -66,8 +66,8 @@ def ithaca (urls):
    img = Image.new("RGB", [canvasWidth,canvasHeight], bkgColor)
    draw = ImageDraw.Draw(img)
 # font from (SEE LICENSE!): http://www.fontsquirrel.com/fonts/glacial-indifference
-   #font1 = ImageFont.truetype("GlacialIndifference-Bold.otf", font1size)
-   font1 = ImageFont.truetype("._fonts/arial.ttf", font1size)
+   font1 = ImageFont.truetype(".fonts/GlacialIndifference-Bold.otf", font1size)
+   #font1 = ImageFont.truetype("._fonts/arial.ttf", font1size)
    #font1 = ImageFont.load_default()
    
 
