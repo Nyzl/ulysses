@@ -1,7 +1,8 @@
 #built on the brilliant work by Adam J Calhourn from his post
 #https://medium.com/@neuroecology/punctuation-in-novels-8f316d542ec4#.tz6i4h1ub
 
-import app 
+import app
+import tkinter 
 import string
 import math
 import sys
