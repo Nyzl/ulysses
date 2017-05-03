@@ -2,16 +2,15 @@
 #https://medium.com/@neuroecology/punctuation-in-novels-8f316d542ec4#.tz6i4h1ub
 
 import app
-import tkinter 
 import string
 import math
 import sys
 from PIL import Image
 from PIL import ImageFont
 from PIL import ImageDraw
-import matplotlib
-import matplotlib.pyplot as plt
-import matplotlib.image as mpimg
+#import matplotlib
+#import matplotlib.pyplot as plt
+#import matplotlib.image as mpimg
 from bs4 import BeautifulSoup as bs
 from urllib.request import urlopen
 
