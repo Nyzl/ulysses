@@ -34,7 +34,7 @@ def ithaca (urls):
    title = soup.title.string
    title = title.strip()
 
-   soup = soup.find('body')
+   soup = soup.find("div",{"class":re.compile(".*(article(body|content)|story-body).*", flags=re.IGNORECASE)})
    txt = soup.get_text()
 
    include = set(string.punctuation)
