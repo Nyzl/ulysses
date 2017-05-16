@@ -8,9 +8,6 @@ import sys
 from PIL import Image
 from PIL import ImageFont
 from PIL import ImageDraw
-#import matplotlib
-#import matplotlib.pyplot as plt
-#import matplotlib.image as mpimg
 from bs4 import BeautifulSoup as bs
 from urllib.request import urlopen
 
@@ -37,7 +34,7 @@ def ithaca (urls):
    title = soup.title.string
    title = title.strip()
 
-   soup = soup.find("div", class_="articleContent")
+   soup = soup.find('body')
    txt = soup.get_text()
 
    include = set(string.punctuation)
