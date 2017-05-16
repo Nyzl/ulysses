@@ -10,6 +10,7 @@ from PIL import ImageFont
 from PIL import ImageDraw
 from bs4 import BeautifulSoup as bs
 from urllib.request import urlopen
+import re
 
 
 #set variables
