@@ -38,17 +38,17 @@ def ithaca (urls):
    [s.extract() for s in soup('script')]
 
    try:
-      soup = soup.find("div",{"class":re.compile(".*(article(.?body|content)|story-body).*", flags=re.IGNORECASE)})
-      txt = soup.get_text()
+      txt = soup.find("div",{"class":re.compile(".*(article(.?body|content)|story-body).*", flags=re.IGNORECASE)})
+      txt = txt.get_text()
 
    except AttributeError:
       try:
-         soup = soup.find("div",{"itemprop":re.compile(".*(article(.?body|content)|story-body).*", flags=re.IGNORECASE)})
-         txt = soup.get_text()
+         txt = soup.find("div",{"itemprop":re.compile(".*(article(.?body|content)|story-body).*", flags=re.IGNORECASE)})
+         txt = txt.get_text()
 
       except:
-         soup = soup.find("body")
-         txt = soup.get_text()
+         txt = soup.find("body")
+         txt = txt.get_text()
 
    include = set(string.punctuation)
 
