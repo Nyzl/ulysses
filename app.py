@@ -13,8 +13,8 @@ def index():
 @app.route('/index',methods=['POST'])
 def index2():
 	app.vars['url'] = request.form['url']
-	urls = str(app.vars['url'])
-	ulysses.ithaca(urls)
+	url = str(app.vars['url'])
+	ulysses.ithaca(url)
 
 	title = ulysses.title
 	wcount = ulysses.wcount
