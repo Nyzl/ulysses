@@ -78,11 +78,8 @@ def ithaca (urls):
 # font from (SEE LICENSE!): http://www.fontsquirrel.com/fonts/glacial-indifference
    font1 = ImageFont.truetype(".fonts/GlacialIndifference-Bold.otf", font1size)
 
-   
-
 # in case you want to change by transition
    optionalFill = (0,0,0);
-
 
 # getTextSize
    for ii in range(linesOfText):
