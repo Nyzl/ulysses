@@ -1,6 +1,5 @@
 from flask import Flask,render_template,request,redirect
 import ulysses
-#from ulysses import ithica 
 
 app = Flask(__name__)
 
