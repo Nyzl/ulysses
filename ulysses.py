@@ -17,7 +17,7 @@ import re
 title = "not"
 wcount = "0"
 
-def ithaca (urls):
+def ithaca (url):
 
    global wcount
    global title
@@ -28,7 +28,7 @@ def ithaca (urls):
 
 
 #web scrape
-   var = urls
+   var = url
    page = urlopen(var).read()
 
    soup = bs(page,'html.parser')
