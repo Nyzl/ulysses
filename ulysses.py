@@ -17,7 +17,7 @@ import re
 title = "not"
 wcount = "0"
 
-def ithaca (urls):
+def ithaca (url):
 
    global wcount
    global title
@@ -28,7 +28,7 @@ def ithaca (urls):
 
 
 #web scrape
-   var = urls
+   var = url
    page = urlopen(var).read()
 
    soup = bs(page,'html.parser')
@@ -78,11 +78,8 @@ def ithaca (urls):
 # font from (SEE LICENSE!): http://www.fontsquirrel.com/fonts/glacial-indifference
    font1 = ImageFont.truetype(".fonts/GlacialIndifference-Bold.otf", font1size)
 
-   
-
 # in case you want to change by transition
    optionalFill = (0,0,0);
-
 
 # getTextSize
    for ii in range(linesOfText):
